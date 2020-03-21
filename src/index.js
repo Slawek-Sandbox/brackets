@@ -15,7 +15,7 @@ module.exports = function check(str, bracketsConfig) {
   //    second loop iteration '()' => ''
   while(rgx.test(str))
     str = str.replace(rgx, '');
-  
+      
   //if str.length > 0 means there are some brackets without a pair
   return str.length ? false : true;
 }
